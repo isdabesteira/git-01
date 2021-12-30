@@ -50,13 +50,8 @@ Outra forma:
 # Lista ordenada
 
 1. Manga
-    1.1. Mangaba
 2. Uva
-    2.1. Uvada
-    2.2. Uvalhada
 3. Pedra
-    3.1. Pedrada
-    3.2. Pedreira
 
 # Lista ordenada automática
 
