@@ -17,9 +17,13 @@ Fiz o curso na **Geek University**
 ## Outra forma para Strong/bold
 __Aqui vai tudo em negrito__.
 
+# Links em markdown
+
 [Primeiro link em markdown](https://www.google.com.br "Google")
 
 <https://www.google.com>
+
+# Email em markdown
 
 <iadabesteira@gmail.com>
 
