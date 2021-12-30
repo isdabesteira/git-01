@@ -130,3 +130,14 @@ function escrever_nome(nome) {
 
 # Separar conteúdo
 ---
+
+# Variáveis de referência
+
+[Definição de tachado][link]
+![foto][imagem]
+
+[link]: https://dicionario.priberam.org/tachado
+
+[imagem]: photo.png
+
+
