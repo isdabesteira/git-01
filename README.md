@@ -56,11 +56,8 @@ Outra forma:
 # Lista ordenada automática
 
 1. Manga
-    1.1. Verde
 1. Goiaba
-    2.1. Goiabada
 1. Pedra
-    3.1. Pedrada.
 
 # Imagens locais
 
