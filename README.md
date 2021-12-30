@@ -119,7 +119,3 @@ function escrever_nome(nome) {
     console.log(nome);
 }
 ```
-
-
-
-
