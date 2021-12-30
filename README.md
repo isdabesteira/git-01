@@ -83,10 +83,10 @@ NW | Nitendo wi | 700,00 | sim
 PL | Playstation | 1.400,00 | não
 AT | Atari 2600 | 490,00 | sim
 
-Sigla alinhamento padrão: esquerda.
-Produto alinhamento à esquerda.
-Preço  alinhamento à direita.
-Testado alinhamento centralizado.
+* Sigla alinhamento padrão: esquerda.
+* Produto alinhamento à esquerda.
+* Preço  alinhamento à direita.
+* Testado alinhamento centralizado.
 
 
 
