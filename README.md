@@ -119,3 +119,8 @@ function escrever_nome(nome) {
     console.log(nome);
 }
 ```
+# Lista de tarefas
+
+- [ ] Primeiro ítem;
+- [x] Segundo ítem;
+- [ ] Terceiro ítem;
