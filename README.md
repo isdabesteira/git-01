@@ -124,3 +124,7 @@ function escrever_nome(nome) {
 - [ ] Primeiro ítem;
 - [x] Segundo ítem;
 - [ ] Terceiro ítem;
+
+# Texto tachado
+~~Texto tachado~~
+
