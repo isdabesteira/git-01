@@ -88,6 +88,7 @@ AT | Atari 2600 | 490,00 | sim
 * Preço  alinhamento à direita.
 * Testado alinhamento centralizado.
 
+_Tenha em mente que os títulos por padrão são alinhados centralizados_.
 
 
 
