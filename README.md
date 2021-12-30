@@ -90,6 +90,35 @@ AT | Atari 2600 | 490,00 | sim
 
 _Tenha em mente que os títulos por padrão são alinhados centralizados_.
 
+# Código de programação não-colorido e colorido
+
+#### Não-colorido
+##### Python
+```
+def inverte(texto):
+    return texto[::-1]
+```
+
+##### Javascript
+```
+function escrever_nome(nome) {
+    console.log(nome);
+}
+```
+
+#### Colorido
+##### Python
+```python
+def inverte(texto):
+    return texto[::-1]
+```
+
+##### Javascript
+```js
+function escrever_nome(nome) {
+    console.log(nome);
+}
+```
 
 
 
