@@ -128,3 +128,5 @@ function escrever_nome(nome) {
 # Texto tachado
 ~~Texto tachado~~
 
+# Separar conteúdo
+---
