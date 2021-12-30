@@ -14,7 +14,7 @@ _Está tudo em itálico_. Agora não mais.
 # Strong/Bold
 Fiz o curso na **Geek University**
 
-##Outra forma para Strong/bold
+## Outra forma para Strong/bold
 __Aqui vai tudo em negrito__.
 
 [Primeiro link em markdown](https://www.google.com.br "Google")
@@ -23,11 +23,11 @@ __Aqui vai tudo em negrito__.
 
 <iadabesteira@gmail.com>
 
-#Citação 
+# Citação 
 > Citação de alguém. E fica bem citado.
 > Até com mais linhas.
 
-#Lista não ordenada
+# Lista não ordenada
 - Manga
     - Uva
     - Tamarino
@@ -69,7 +69,6 @@ Outra forma:
 
 # Imagens da web
 ![Teste](https://s2.glbimg.com/c1tS_axTjV_qDkmMeMs3wYZCgGY=/0x0:5472x3648/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/H/v/pTatikTlSIWRuTzd0JwA/j9a6180.jpg "Imagem da net.")
-
 
 
 
