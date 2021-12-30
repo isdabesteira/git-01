@@ -75,6 +75,21 @@ Outra forma:
 ![Teste](https://s2.glbimg.com/c1tS_axTjV_qDkmMeMs3wYZCgGY=/0x0:5472x3648/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/H/v/pTatikTlSIWRuTzd0JwA/j9a6180.jpg "Imagem da net.")
 
 
+# Tabelas
+
+Sigla|Produto | Preço | Testado
+----|:--------|-------:|:----------:
+NW | Nitendo wi | 700,00 | sim
+PL | Playstation | 1.400,00 | não
+AT | Atari 2600 | 490,00 | sim
+
+Sigla alinhamento padrão: esquerda.
+Produto alinhamento à esquerda.
+Preço  alinhamento à direita.
+Testado alinhamento centralizado.
+
+
+
 
 
 
