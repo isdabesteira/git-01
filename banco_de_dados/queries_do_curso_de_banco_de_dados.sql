@@ -1,16 +1,17 @@
-use banco_do_curso_de_banco_de_dados
 /*******************************************************************
 *                        Inserts                                   *
 ********************************************************************/
-insert into Aluno(
+
+
+/*00*/use banco_do_curso_de_banco_de_dados
+/*01*/insert into Aluno(
 	Sexo, Idade, Data_inscricao_curso, Telefone, Valor_pago_curso,
     Ativo, Endereco, Nome
 )values(
 	'M', 55, '2018-12-01', '11 5555-2222', 645.22, 
     1, 'Avenida Paulista, 1500, ap315 - São Paulo - SP', 'João'
 );
-
-insert into Aluno(
+/*02*/insert into Aluno(
 	data_inscricao_curso, telefone, valor_pago_curso,
     ativo, endereco, nome, 
     sexo, idade
@@ -19,9 +20,7 @@ insert into Aluno(
     1, 'Rua Francisco Sá, 10 - Belo Horizonte - MG', 'Fernanda', 
     'F', 30
 );
-
-
-insert into Aluno(
+/*03*/insert into Aluno(
 	data_inscricao_curso, telefone, valor_pago_curso,
     ativo, endereco, nome, 
     sexo, idade
@@ -30,9 +29,7 @@ insert into Aluno(
     0, 'Avenida Dom Manuel, 300 - Fortaleza - CE', 'José', 
     'M', 29
 );
-
-
-insert into Aluno(
+/*04*/insert into Aluno(
 	data_inscricao_curso, telefone, valor_pago_curso,
     ativo, endereco, nome, 
     sexo, idade
@@ -41,9 +38,7 @@ insert into Aluno(
     1, 'Rua Miramar, 1200, ap112 - Natal - RN', 'Maria', 
     'F', 42
 );
-
-
-insert into Aluno(
+/*05*/insert into Aluno(
 	data_inscricao_curso, telefone, valor_pago_curso,
     ativo, endereco, nome, 
     sexo, idade
@@ -53,11 +48,69 @@ insert into Aluno(
     'M', 37
 );
 
-/*******************************************************************
-*                        Updates                                   *
-********************************************************************/
+
+/********************************************************************
+ *                        Selects                                   *
+ ********************************************************************/
 
 
-/*******************************************************************
-*                        Deletes                                   *
-********************************************************************/
+use banco_do_curso_de_banco_de_dados
+/*00*/select * from Aluno;
+/*01*/select nome, idade, telefone from Aluno where valor_pago_curso > 600 and idade > 30;
+/*02*/select * from Aluno where sexo = 'F';
+/*03*/select * from Aluno where valor_pago_curso > 600;
+/*04*/select * from Aluno where valor_pago_curso < 600;
+/*05*/select * from Aluno where valor_pago_curso >= 600.55;
+/*06*/select * from Aluno where valor_pago_curso <= 600.55;
+/*07*/select * from Aluno where sexo = 'M' and ativo = 1;
+/*08*/select * from Aluno where sexo = 'M' and ativo = 1 and valor_pago_curso < 625;
+/*09*/select * from Aluno where (sexo = 'M' or ativo = 1) and valor_pago_curso < 625;
+/*10*/select * from Aluno where (sexo = 'F' or idade > 40); 
+/*11*/select * from Aluno where idade between 29 and 40;
+/*12*/select * from Aluno where data_inscricao_curso between '2018-11-10' and '2018-12-31'; 
+/*13*/select * from Aluno where nome in ( 'João', 'Maria', 'José' );
+/* 'in' escrito de outra forma: */
+/*14*/select * from Aluno where nome = 'João' or nome = 'Maria' or nome = 'José';
+/*15*/select * from Aluno where nome not in ( 'João', 'Maria', 'José' );
+/*16*/select * from Aluno where nome = 'Maria';
+/*17*/select * from Aluno where nome like 'Maria';
+/*18*/select * from Aluno where nome like '%a';
+/*19*/select * from Aluno where nome like 'M%';
+/*20*/select * from Aluno where nome like '__s_';
+/*21*/select * from Aluno where nome like '%ri_';
+/*22*/select * from Aluno where nome like 'ma_ia';
+/*23*/select * from Aluno where nome not like 'M%';
+/*24*/select * from Aluno where nome like 'M%O';
+/*25*/select * from Aluno where nome like '__ã_';
+/*26*/select * from Aluno where nome like '%N__d%';
+/*27*/select * from Aluno where idade > 20 order by nome desc, idade asc;
+/*28*/select * from Aluno where idade > 20 order by nome asc, idade desc;
+/*29*/select * from Aluno order by idade desc;
+/*30*/select * from Aluno order by nome desc;
+/*31*/select * from Aluno order by nome /*DEFAULT=ASC*/;
+/*32*/select * from Aluno order by valor_pago_curso asc /*DEFAULT=ASC*/;
+/*33*/select * from Aluno order by valor_pago_curso desc;
+/*34*/select * from Aluno order by sexo asc, idade desc;
+
+/********************************************************************
+ *                        Updates                                   *
+ ********************************************************************/
+
+/*01*/update Aluno set Ativo = 0 where Nome = 'João';
+/*02*/update Aluno set idade=35 where Nome = 'Fernanda';
+/*03*/update Aluno set idade=45 where Nome like 'M%';
+/*04*/update Aluno set ativo=1, valor_pago_curso=650.00 where Nome like '__ã_';
+/*05*/update Aluno set telefone='84 9991-7746' where telefone = '11 7777-7777';
+
+/********************************************************************
+ *                        Deletes                                   *
+ ********************************************************************/
+
+/*01*/delete from Aluno where idade = 29;
+/*02*/delete from Aluno where ( idade between 35 and 49 ) or sexo = 'F';
+/*03*/delete from Aluno where sexo not like 'F';
+
+/********************************************************************
+ *                        Fim                                       *
+ ********************************************************************/
+
