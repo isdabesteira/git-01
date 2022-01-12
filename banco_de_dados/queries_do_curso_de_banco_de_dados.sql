@@ -101,6 +101,11 @@ use banco_do_curso_de_banco_de_dados
 /*03*/update Aluno set idade=45 where Nome like 'M%';
 /*04*/update Aluno set ativo=1, valor_pago_curso=650.00 where Nome like '__ã_';
 /*05*/update Aluno set telefone='84 9991-7746' where telefone = '11 7777-7777';
+/*06*/update Aluno set cpf='111.111.111-11' where nome = 'João';
+/*07*/update Aluno set cpf='222.111.111-11' where nome = 'Fernanda';
+/*08*/update Aluno set cpf='333.111.111-11' where nome = 'José';
+/*09*/update Aluno set cpf='444.111.111-11' where nome = 'Maria';
+/*10*/update Aluno set cpf='555.111.111-11' where nome = 'Marcelo';
 
 /********************************************************************
  *                        Deletes                                   *
