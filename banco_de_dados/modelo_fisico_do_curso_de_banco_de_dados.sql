@@ -20,4 +20,13 @@ ALTER TABLE Aluno DROP COLUMN CPF;
 ALTER TABLE Aluno ADD CPF char(14) AFTER Idade;
 ALTER TABLE Aluno CHANGE CPF cpf CHAR(14);
 ALTER TABLE Aluno MODIFY COLUMN cpf CHAR(14) PRIMARY KEY;
+/* Criando chave primária não natural */
 ALTER TABLE Aluno ADD COLUMN idaluno int PRIMARY KEY AUTO_INCREMENT;
+/* Decompondo o campo composto - endereço - em campos menores e atômicos. */
+ALTER TABLE Aluno ADD COLUMN Logradouro varchar(100);
+ALTER TABLE Aluno ADD COLUMN Bairro varchar(100);
+ALTER TABLE Aluno ADD COLUMN Complemento varchar(20);
+ALTER TABLE Aluno ADD COLUMN Numero varchar(10);
+ALTER TABLE Aluno ADD COLUMN Cidade varchar(50);
+ALTER TABLE Aluno ADD COLUMN Estado varchar(2);
+
