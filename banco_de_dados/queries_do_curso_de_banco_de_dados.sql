@@ -106,6 +106,57 @@ use banco_do_curso_de_banco_de_dados
 /*08*/update Aluno set cpf='333.111.111-11' where nome = 'José';
 /*09*/update Aluno set cpf='444.111.111-11' where nome = 'Maria';
 /*10*/update Aluno set cpf='555.111.111-11' where nome = 'Marcelo';
+/*11*/update Aluno set cpf='111.111.111-11', nome ='João' where Telefone = '11 3333-7777'
+/*12*/update Aluno 
+                  set 
+                      logradouro = 'Avenida Paulista',
+                      complemento = 'ap315',
+                      numero = '1500',
+                      bairro = 'Bela Vista',
+                      cidade = 'São Paulo',
+                      estado = 'SP'
+				  where
+                      idaluno = 1;
+/*13*/update Aluno 
+                  set 
+                      logradouro = 'Rua Francisco Sá',
+                      complemento = '',
+                      numero = '10',
+                      bairro = 'Gutierrez',
+                      cidade = 'Belo Horizonte',
+                      estado = 'MG'
+				  where
+                      idaluno = 2;
+/*14*/update Aluno 
+                  set 
+                      logradouro = 'Avenida Dom Manuel',
+                      complemento = '',
+                      numero = '300',
+                      bairro = 'Aldeota',
+                      cidade = 'Fortaleza',
+                      estado = 'CE'
+				  where
+                      idaluno = 3;
+/*15*/update Aluno 
+                  set 
+                      logradouro = 'Rua Miramar',
+                      complemento = 'ap112',
+                      numero = '1200',
+                      bairro = 'Rocas',
+                      cidade = 'Natal',
+                      estado = 'RN'
+				  where
+                      idaluno = 4;
+/*16*/update Aluno 
+                  set 
+                      logradouro = 'Rua João de Abreu',
+                      complemento = '',
+                      numero = '650',
+                      bairro = 'Setor Oeste',
+                      cidade = 'Goiânia',
+                      estado = 'GO'
+				  where
+                      idaluno = 5;
 
 /********************************************************************
  *                        Deletes                                   *
