@@ -29,4 +29,5 @@ ALTER TABLE Aluno ADD COLUMN Complemento varchar(20);
 ALTER TABLE Aluno ADD COLUMN Numero varchar(10);
 ALTER TABLE Aluno ADD COLUMN Cidade varchar(50);
 ALTER TABLE Aluno ADD COLUMN Estado varchar(2);
+ALTER TABLE Aluno DROP COLUMN Endereco;
 
