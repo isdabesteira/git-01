@@ -12,6 +12,12 @@ CREATE TABLE Aluno (
     Sexo char(1)
 );
 
+CREATE TABLE Telefone (
+    idtelefone int PRIMARY KEY AUTO_INCREMENT,
+    Numero varchar(20),
+    Tipo char(3)
+);
+
 /* Alterando colunas da tabela */
 ALTER TABLE Aluno ADD CPF char(11);
 ALTER TABLE Aluno ADD email varchar(150);
