@@ -47,6 +47,12 @@
     1, 'Rua João de Abreu, 650 - Goiânia - GO', 'Marcelo', 
     'M', 37
 );
+/*06*/insert into Telefone(Numero,Tipo) values ('11 5555-2222','res'); /*José*/
+/*07*/insert into Telefone(Numero,Tipo) values ('11 3333-4444','com'); /*José*/ 
+/*08*/insert into Telefone(Numero,Tipo) values ('11 3333-2222','res'); /*Fernanda*/
+/*09*/insert into Telefone(Numero,Tipo) values ('11 3333-7777','res'); /*João*/
+/*10*/insert into Telefone(Numero,Tipo) values ('11 7777-7777','res'); /*Maria*/
+/*11*/insert into Telefone(Numero,Tipo) values ('11 1111-7777','res'); /*Marcelo*/
 
 
 /********************************************************************
