@@ -163,6 +163,12 @@ use banco_do_curso_de_banco_de_dados
                       estado = 'GO'
 				  where
                       idaluno = 5;
+/*17*/update Telefone set fk_idaluno=1 where idtelefone in (1,2);
+/*18*/update Telefone set fk_idaluno=2 where idtelefone in (3);
+/*19*/update Telefone set fk_idaluno=3 where idtelefone in (4);
+/*20*/update Telefone set fk_idaluno=4 where idtelefone in (5);
+/*21*/update Telefone set fk_idaluno=5 where idtelefone in (6);
+
 
 /********************************************************************
  *                        Deletes                                   *
