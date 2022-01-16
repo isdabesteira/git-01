@@ -18,6 +18,17 @@ CREATE TABLE Telefone (
     Tipo char(3)
 );
 
+CREATE TABLE Endereco (
+    idendereco int primary key auto_increment,
+    fk_idaluno int,
+    Logadouro varchar(100),
+    Numero varchar(10),
+    Complemento varchar(20),
+    Bairro varchar(50),
+    Cidade varchar(100),
+    Estado char(2)
+);
+
 /* Alterando colunas da tabela */
 ALTER TABLE Aluno ADD CPF char(11);
 ALTER TABLE Aluno ADD email varchar(150);
@@ -41,4 +52,7 @@ ALTER TABLE Telefone ADD COLUMN fk_idaluno int;
 ALTER TABLE Telefone ADD CONSTRAINT fk_aluno_telefone FOREIGN kEY (fk_idaluno) REFERENCES Aluno(idaluno);
 /* Removendo a coluna Telefone da tabela Aluno. */
 ALTER TABLE Aluno DROP COLUMN Telefone;
+/* Criando o constraint da chave estrangeira para criar o relacionamento. */
+ALTER TABLE Endereco ADD CONSTRAINT fk_aluno_endereco FOREIGN KEY (fk_idaluno) REFERENCES Aluno (idaluno);
+
 
