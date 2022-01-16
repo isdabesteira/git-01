@@ -39,5 +39,6 @@ ALTER TABLE Aluno DROP COLUMN Endereco;
 /* Criando a chave estranjeira e o constraint da chave para criar o relacionamento. */
 ALTER TABLE Telefone ADD COLUMN fk_idaluno int;
 ALTER TABLE Telefone ADD CONSTRAINT fk_aluno_telefone FOREIGN kEY (fk_idaluno) REFERENCES Aluno(idaluno);
-
+/* Removendo a coluna Telefone da tabela Aluno. */
+ALTER TABLE Aluno DROP COLUMN Telefone;
 
