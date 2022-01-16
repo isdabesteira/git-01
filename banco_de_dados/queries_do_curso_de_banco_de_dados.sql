@@ -97,6 +97,7 @@ use banco_do_curso_de_banco_de_dados
 /*32*/select * from Aluno order by valor_pago_curso asc /*DEFAULT=ASC*/;
 /*33*/select * from Aluno order by valor_pago_curso desc;
 /*34*/select * from Aluno order by sexo asc, idade desc;
+/*35*/select idaluno, Nome, Telefone.Numero, Tipo from Aluno, Telefone where idaluno=fk_idaluno;
 
 /********************************************************************
  *                        Updates                                   *
