@@ -53,6 +53,9 @@
 /*09*/insert into Telefone(Numero,Tipo) values ('11 3333-7777','res'); /*João*/
 /*10*/insert into Telefone(Numero,Tipo) values ('11 7777-7777','res'); /*Maria*/
 /*11*/insert into Telefone(Numero,Tipo) values ('11 1111-7777','res'); /*Marcelo*/
+/*12*/insert into Endereco(fk_idaluno, Logradouro, Numero, Complemento, Bairro, Cidade, Estado) 
+                   SELECT  idaluno, Logradouro, Numero, Complemento, Bairro, Cidade, Estado
+                   FROM Aluno;
 
 
 /********************************************************************
