@@ -54,5 +54,6 @@ ALTER TABLE Telefone ADD CONSTRAINT fk_aluno_telefone FOREIGN kEY (fk_idaluno) R
 ALTER TABLE Aluno DROP COLUMN Telefone;
 /* Criando o constraint da chave estrangeira para criar o relacionamento. */
 ALTER TABLE Endereco ADD CONSTRAINT fk_aluno_endereco FOREIGN KEY (fk_idaluno) REFERENCES Aluno (idaluno);
-
+/* Corrigir o erro Logadouro para Logradouro na tabela Endereco. */
+ALTER TABLE Endereco CHANGE Logadouro Logradouro varchar(100);
 
