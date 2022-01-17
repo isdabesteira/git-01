@@ -56,4 +56,10 @@ ALTER TABLE Aluno DROP COLUMN Telefone;
 ALTER TABLE Endereco ADD CONSTRAINT fk_aluno_endereco FOREIGN KEY (fk_idaluno) REFERENCES Aluno (idaluno);
 /* Corrigir o erro Logadouro para Logradouro na tabela Endereco. */
 ALTER TABLE Endereco CHANGE Logadouro Logradouro varchar(100);
-
+/* Remover os campos redundantes da tabela Aluno baseado na tabela Endereco */
+ALTER TABLE Aluno DROP COLUMN Logradouro;
+ALTER TABLE Aluno DROP COLUMN Bairro;
+ALTER TABLE Aluno DROP COLUMN Numero;
+ALTER TABLE Aluno DROP COLUMN Cidade;
+ALTER TABLE Aluno DROP COLUMN Complemento;
+ALTER TABLE Aluno DROP COLUMN Estado;
