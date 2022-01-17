@@ -29,6 +29,11 @@ CREATE TABLE Endereco (
     Estado char(2)
 );
 
+CREATE TABLE Curso (
+    idcurso int PRIMARY KEY AUTO_INCREMENT,
+    Descricao varchar(50)
+);
+
 /* Alterando colunas da tabela */
 ALTER TABLE Aluno ADD CPF char(11);
 ALTER TABLE Aluno ADD email varchar(150);
