@@ -93,3 +93,5 @@ ALTER TABLE Aluno DROP COLUMN Numero;
 ALTER TABLE Aluno DROP COLUMN Cidade;
 ALTER TABLE Aluno DROP COLUMN Complemento;
 ALTER TABLE Aluno DROP COLUMN Estado;
+/* Modificando a coluna Tipo para receber elementos de uma enumeracao. */
+ALTER TABLE Telefone MODIFY COLUMN Tipo enum('res','cel','com');
