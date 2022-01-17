@@ -56,6 +56,10 @@
 /*12*/insert into Endereco(fk_idaluno, Logradouro, Numero, Complemento, Bairro, Cidade, Estado) 
                    SELECT  idaluno, Logradouro, Numero, Complemento, Bairro, Cidade, Estado
                    FROM Aluno;
+/*13*/insert into Curso(Descricao) values ('Curso completo do desenvolvedor NodeJS e MongoDB');
+/*14*/insert into Curso(Descricao) values ('Desenvolvedor multiplataforma Android e IOS');
+/*15*/insert into Curso(Descricao) values ('Desenvolvimento web com Angular');
+/*16*/insert into Curso(Descricao) values ('Desenvolvimento web completo 2019');
 
 
 /********************************************************************
@@ -101,6 +105,9 @@ use banco_do_curso_de_banco_de_dados
 /*33*/select * from Aluno order by valor_pago_curso desc;
 /*34*/select * from Aluno order by sexo asc, idade desc;
 /*35*/select idaluno, Nome, Telefone.Numero, Tipo from Aluno, Telefone where idaluno=fk_idaluno;
+/*36*/select * from Telefone;
+/*37*/select * from Endereco;
+/*38*/select * from Curso;
 
 /********************************************************************
  *                        Updates                                   *
