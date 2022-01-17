@@ -60,7 +60,14 @@
 /*14*/insert into Curso(Descricao) values ('Desenvolvedor multiplataforma Android e IOS');
 /*15*/insert into Curso(Descricao) values ('Desenvolvimento web com Angular');
 /*16*/insert into Curso(Descricao) values ('Desenvolvimento web completo 2019');
-
+/* Preenchendo a tabela 'se_matricula' */
+/*17*/insert into se_matricula(fk_idaluno, fk_idcurso) values (1,4);
+/*18*/insert into se_matricula(fk_idaluno, fk_idcurso) values (2,2);
+/*19*/insert into se_matricula(fk_idaluno, fk_idcurso) values (3,1);
+/*20*/insert into se_matricula(fk_idaluno, fk_idcurso) values (3,2);
+/*21*/insert into se_matricula(fk_idaluno, fk_idcurso) values (3,3);
+/*22*/insert into se_matricula(fk_idaluno, fk_idcurso) values (3,4);
+/*23*/insert into se_matricula(fk_idaluno, fk_idcurso) values (4,1);
 
 /********************************************************************
  *                        Selects                                   *
