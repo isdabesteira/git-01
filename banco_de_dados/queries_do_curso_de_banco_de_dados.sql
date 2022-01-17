@@ -186,7 +186,13 @@ use banco_do_curso_de_banco_de_dados
 /*19*/update Telefone set fk_idaluno=3 where idtelefone in (4);
 /*20*/update Telefone set fk_idaluno=4 where idtelefone in (5);
 /*21*/update Telefone set fk_idaluno=5 where idtelefone in (6);
-
+/* Atualizando os tipos de telefone */
+/*22*/update Telefone set Tipo='res' where idtelefone = 1;
+/*23*/update Telefone set Tipo='cel' where idtelefone = 2;
+/*24*/update Telefone set Tipo='com' where idtelefone = 3;
+/*25*/update Telefone set Tipo='cel' where idtelefone = 4;
+/*26*/update Telefone set Tipo='com' where idtelefone = 5;
+/*27*/update Telefone set Tipo='cel' where idtelefone = 6;
 
 /********************************************************************
  *                        Deletes                                   *
