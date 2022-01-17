@@ -34,6 +34,31 @@ CREATE TABLE Curso (
     Descricao varchar(50)
 );
 
+CREATE TABLE se_matricula (
+    idse_matricula int PRIMARY KEY AUTO_INCREMENT,
+    fk_idaluno int,
+    fk_idcurso int
+);
+CREATE TABLE se_matricula (
+    idse_matricula int PRIMARY KEY AUTO_INCREMENT,
+    fk_idaluno int,
+    fk_idcurso int
+);CREATE TABLE se_matricula (
+    idse_matricula int PRIMARY KEY AUTO_INCREMENT,
+    fk_idaluno int,
+    fk_idcurso int
+);CREATE TABLE se_matricula (
+    idse_matricula int PRIMARY KEY AUTO_INCREMENT,
+    fk_idaluno int,
+    fk_idcurso int
+);
+
+ALTER TABLE se_matricula ADD CONSTRAINT fk_aluno_se_matricula
+                                            FOREIGN KEY (fk_idaluno) 
+                                            REFERENCES Aluno(idaluno);
+ALTER TABLE se_matricula ADD CONSTRAINT fk_curso_matricula 
+                                            FOREIGN KEY (fk_idcurso) 
+                                            REFERENCES Curso(idcurso);
 /* Alterando colunas da tabela */
 ALTER TABLE Aluno ADD CPF char(11);
 ALTER TABLE Aluno ADD email varchar(150);
