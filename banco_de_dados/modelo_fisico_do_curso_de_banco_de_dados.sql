@@ -95,3 +95,6 @@ ALTER TABLE Aluno DROP COLUMN Complemento;
 ALTER TABLE Aluno DROP COLUMN Estado;
 /* Modificando a coluna Tipo para receber elementos de uma enumeracao. */
 ALTER TABLE Telefone MODIFY COLUMN Tipo enum('res','cel','com');
+/* Adicionando o constraint unique via sql, usando constraints. */
+ALTER TABLE Aluno ADD CONSTRAINT uc_aluno_cpf unique(cpf);
+ALTER TABLE Aluno ADD CONSTRAINT uc_aluno_email unique(email);
