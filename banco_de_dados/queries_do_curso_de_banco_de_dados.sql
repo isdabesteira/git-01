@@ -117,6 +117,7 @@ use banco_do_curso_de_banco_de_dados
 /*36*/select * from Telefone;
 /*37*/select * from Endereco;
 /*38*/select * from Curso;
+/*39*/select * from Endereco where idendereco=6;
 
 /********************************************************************
  *                        Updates                                   *
@@ -203,6 +204,7 @@ use banco_do_curso_de_banco_de_dados
 /*01*/delete from Aluno where idade = 29;
 /*02*/delete from Aluno where ( idade between 35 and 49 ) or sexo = 'F';
 /*03*/delete from Aluno where sexo not like 'F';
+/*04*/delete from Endereco where idendereco=6;
 
 /********************************************************************
  *                        Fim                                       *
