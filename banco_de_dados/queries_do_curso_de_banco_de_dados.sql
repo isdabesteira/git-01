@@ -68,6 +68,8 @@
 /*21*/insert into se_matricula(fk_idaluno, fk_idcurso) values (3,3);
 /*22*/insert into se_matricula(fk_idaluno, fk_idcurso) values (3,4);
 /*23*/insert into se_matricula(fk_idaluno, fk_idcurso) values (4,1);
+/*24*/insert into Endereco(Logradouro, Numero, Complemento, Bairro, Cidade, Estado, fk_idaluno) 
+                   values ('Avenida Paulista',500,'','Bela Vista','São Paulo','SP', 1);
 
 /********************************************************************
  *                        Selects                                   *
