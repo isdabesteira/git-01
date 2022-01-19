@@ -98,3 +98,5 @@ ALTER TABLE Telefone MODIFY COLUMN Tipo enum('res','cel','com');
 /* Adicionando o constraint unique via sql, usando constraints. */
 ALTER TABLE Aluno ADD CONSTRAINT uc_aluno_cpf unique(cpf);
 ALTER TABLE Aluno ADD CONSTRAINT uc_aluno_email unique(email);
+/* Garantindo que o relacionamento entre a tabela Aluno e Endereco é de 1 para 1 */
+ALTER TABLE Endereco ADD CONSTRAINT uc_fk_idaluno UNIQUE(fk_idaluno);
