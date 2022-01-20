@@ -138,7 +138,11 @@ use banco_do_curso_de_banco_de_dados
       from Aluno where Sexo != 'F';
 /*43*/select max(Idade) as 'Idade do mais velho' from Aluno;
 /*44*/select min(Idade) as 'Idade do mais novo' from Aluno;
-
+/*45*/select truncate(77.8945,2);
+/*46*/select ceil(77.8945); 
+/*47*/select floor(77.8945);
+/*48*/select round(77.8945,2);
+/*49*/select round(77.8955,2);
 
 /********************************************************************
  *                        Updates                                   *
