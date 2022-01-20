@@ -118,6 +118,27 @@ use banco_do_curso_de_banco_de_dados
 /*37*/select * from Endereco;
 /*38*/select * from Curso;
 /*39*/select * from Endereco where idendereco=6;
+/*40*/select sum(Valor_pago_curso) as Total, 
+             avg(Valor_pago_curso) as Média, 
+             min(Valor_pago_curso) as Mínimo, 
+             max(Valor_pago_curso) as Máximo,
+             count(*) as 'Quantidade de alunos'
+      from Aluno;
+/*41*/select sum(Valor_pago_curso) as Total, 
+             avg(Valor_pago_curso) as Média, 
+             min(Valor_pago_curso) as Mínimo, 
+             max(Valor_pago_curso) as Máximo,
+             count(*) as 'Quantidade de Mulheres'
+      from Aluno where Sexo = 'F';
+/*42*/select sum(Valor_pago_curso) as Total, 
+             avg(Valor_pago_curso) as Média, 
+             min(Valor_pago_curso) as Mínimo, 
+             max(Valor_pago_curso) as Máximo,
+             count(*) as 'Quantidade de Homens'
+      from Aluno where Sexo != 'F';
+/*43*/select max(Idade) as 'Idade do mais velho' from Aluno;
+/*44*/select min(Idade) as 'Idade do mais novo' from Aluno;
+
 
 /********************************************************************
  *                        Updates                                   *
