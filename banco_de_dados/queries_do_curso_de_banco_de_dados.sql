@@ -143,6 +143,7 @@ use banco_do_curso_de_banco_de_dados
 /*47*/select floor(77.8945);
 /*48*/select round(77.8945,2);
 /*49*/select round(77.8955,2);
+/*50*/select Estado, count(*) as 'Número de alunos' from Endereco group by Estado;
 
 /********************************************************************
  *                        Updates                                   *
