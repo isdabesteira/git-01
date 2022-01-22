@@ -144,6 +144,16 @@ use banco_do_curso_de_banco_de_dados
 /*48*/select round(77.8945,2);
 /*49*/select round(77.8955,2);
 /*50*/select Estado, count(*) as 'Número de alunos' from Endereco group by Estado;
+/*51*/select 
+              Descricao as Curso, 
+              count(*) as Alunos 
+      from 
+              se_matricula, Curso
+      where 
+              idcurso = fk_idcurso
+      group by 
+              fk_idcurso;
+
 
 /********************************************************************
  *                        Updates                                   *
