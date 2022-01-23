@@ -39,19 +39,7 @@ CREATE TABLE se_matricula (
     fk_idaluno int,
     fk_idcurso int
 );
-CREATE TABLE se_matricula (
-    idse_matricula int PRIMARY KEY AUTO_INCREMENT,
-    fk_idaluno int,
-    fk_idcurso int
-);CREATE TABLE se_matricula (
-    idse_matricula int PRIMARY KEY AUTO_INCREMENT,
-    fk_idaluno int,
-    fk_idcurso int
-);CREATE TABLE se_matricula (
-    idse_matricula int PRIMARY KEY AUTO_INCREMENT,
-    fk_idaluno int,
-    fk_idcurso int
-);
+
 
 ALTER TABLE se_matricula ADD CONSTRAINT fk_aluno_se_matricula
                                             FOREIGN KEY (fk_idaluno) 
