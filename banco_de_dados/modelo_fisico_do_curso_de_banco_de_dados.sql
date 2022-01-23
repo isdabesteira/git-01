@@ -40,6 +40,23 @@ CREATE TABLE se_matricula (
     fk_idcurso int
 );
 
+CREATE TABLE Gasto(
+    idgasto int PRIMARY KEY AUTO_INCREMENT,
+    Ano int not null,
+    Tipo enum('pervisto', 'realizado') not null,
+    Jan float(10,2),
+    Fev float(10,2),
+    Mar float(10,2),
+    Abr float(10,2),
+    Mai float(10,2),
+    Jun float(10,2),
+    Jul float(10,2),
+    Ago float(10,2),
+    `Set` float(10,2),
+    `Out` float(10,2),
+    Nov float(10,2),
+    Dez float(10,2)
+);
 
 ALTER TABLE se_matricula ADD CONSTRAINT fk_aluno_se_matricula
                                             FOREIGN KEY (fk_idaluno) 
