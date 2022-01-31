@@ -43,7 +43,7 @@ CREATE TABLE se_matricula (
 CREATE TABLE Gasto(
     idgasto int PRIMARY KEY AUTO_INCREMENT,
     Ano int not null,
-    Tipo enum('pervisto', 'realizado') not null,
+    Tipo enum('previsto', 'realizado') not null,
     Jan float(10,2),
     Fev float(10,2),
     Mar float(10,2),
@@ -57,6 +57,7 @@ CREATE TABLE Gasto(
     Nov float(10,2),
     Dez float(10,2)
 );
+
 
 ALTER TABLE se_matricula ADD CONSTRAINT fk_aluno_se_matricula
                                             FOREIGN KEY (fk_idaluno) 
@@ -105,3 +106,5 @@ ALTER TABLE Aluno ADD CONSTRAINT uc_aluno_cpf unique(cpf);
 ALTER TABLE Aluno ADD CONSTRAINT uc_aluno_email unique(email);
 /* Garantindo que o relacionamento entre a tabela Aluno e Endereco é de 1 para 1 */
 ALTER TABLE Endereco ADD CONSTRAINT uc_fk_idaluno UNIQUE(fk_idaluno);
+/* Garantindo que o campo tipo da tabela gasto tenha previsto no lugar de pervisto. */
+ALTER TABLE Gasto MODIFY COLUMN Tipo enum ('previsto','realizado');
