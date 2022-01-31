@@ -68,8 +68,46 @@
 /*21*/insert into se_matricula(fk_idaluno, fk_idcurso) values (3,3);
 /*22*/insert into se_matricula(fk_idaluno, fk_idcurso) values (3,4);
 /*23*/insert into se_matricula(fk_idaluno, fk_idcurso) values (4,1);
-/*24*/insert into Endereco(Logradouro, Numero, Complemento, Bairro, Cidade, Estado, fk_idaluno) 
+/*24*/insert into Aluno(Nome, Idade, cpf, Data_inscricao_curso, Valor_pago_curso, Ativo, Sexo, email)
+                values ('Rosa', 25, '666.655.554-15', '2020-10-10', 650.00, 1, 'F', 'rosa@gmarron.com');
+/*25*/insert into Endereco(Logradouro, Numero, Complemento, Bairro, Cidade, Estado, fk_idaluno) 
                    values ('Avenida Paulista',500,'','Bela Vista','São Paulo','SP', 1);
+/*26*//*26*/insert into Gasto( ano, 
+			 tipo, 
+			 jan, 
+                         fev, 
+                         mar, 
+                         abr, 
+                         mai, 
+                         jun, 
+                         jul, 
+                         ago, 
+                         `set`, 
+                         `out`, 
+                         nov, 
+                         dez )
+			values
+			( '2019', 
+                         'previsto', 
+                         18000, 
+                         17000, 
+                         19000, 
+                         20000, 
+                         17000, 
+                         18000, 
+                         18500, 
+                         18500, 
+                         1800, 
+                         17500, 
+                         18000, 
+                         17000 );
+/*27*/insert into Gasto( ano, 
+			 tipo, 
+                         jan )
+			 values ( '2019', 
+			 'realizado', 
+                         18353.20 );
+
 
 /********************************************************************
  *                        Selects                                   *
@@ -232,6 +270,18 @@ use banco_do_curso_de_banco_de_dados
 /*25*/update Telefone set Tipo='cel' where idtelefone = 4;
 /*26*/update Telefone set Tipo='com' where idtelefone = 5;
 /*27*/update Telefone set Tipo='cel' where idtelefone = 6;
+/* Atualizando os Gastos por mês do registro 2 */
+/*28*/update Gasto set fev = 17555.55 where idgasto = 2;
+/*29*/update Gasto set mar = 19435.73 where idgasto = 2;
+/*30*/update Gasto set abr = 22753.12 where idgasto = 2;
+/*31*/update Gasto set mai = 16198.12 where idgasto = 2;
+/*32*/update Gasto set jun = 17451.88 where idgasto = 2;
+/*33*/update Gasto set jul = 18975.40 where idgasto = 2;
+/*34*/update Gasto set ago = 19163.84 where idgasto = 2;
+/*35*/update Gasto set `set` = 18132.56 where idgasto = 2;
+/*36*/update Gasto set `out` = 17667.91 where idgasto = 2;
+/*37*/update Gasto set nov = 17936.33 where idgasto = 2;
+/*38*/update Gasto set dez = 17125.88 where idgasto = 2;
 
 /********************************************************************
  *                        Deletes                                   *
