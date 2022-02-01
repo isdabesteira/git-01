@@ -194,7 +194,7 @@ use banco_do_curso_de_banco_de_dados
 /*52*/select jan, fev, mar, abr, mai, jun, jul, ago, `set`, `out`, nov, dez from Gasto;
 /*53*/select ( jan + fev + mar + abr + mai + jun + jul + ago + `set` + `out` + nov + dez ) as 'Total de gasto' from Gasto;
 /*54*/select Ano, 
-	     ( jan + fev + mar + abr + mai + jun + jul + ago + `set` + `out` + nov + dez )/12 as 'Média mensal de gasto', 
+	     truncate( ( jan + fev + mar + abr + mai + jun + jul + ago + `set` + `out` + nov + dez )/12 ,0) as 'Média mensal de gasto', 
              Tipo from Gasto;
 
 /********************************************************************
