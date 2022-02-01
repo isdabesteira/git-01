@@ -191,6 +191,8 @@ use banco_do_curso_de_banco_de_dados
               idcurso = fk_idcurso
       group by 
               fk_idcurso;
+/*52*/select jan, fev, mar, abr, mai, jun, jul, ago, `set`, `out`, nov, dez from Gasto;
+/*53*/select ( jan + fev + mar + abr + mai + jun + jul + ago + `set` + `out` + nov + dez ) as 'Total de gasto' from Gasto;
 
 
 /********************************************************************
