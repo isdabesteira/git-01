@@ -196,6 +196,64 @@ use banco_do_curso_de_banco_de_dados
 /*54*/select Ano, 
 	     truncate( ( jan + fev + mar + abr + mai + jun + jul + ago + `set` + `out` + nov + dez )/12 ,0) as 'Média mensal de gasto', 
              Tipo from Gasto;
+/*54*/select * from Gasto;
+/*55*/select idgasto from Gasto where ano = '2019' and tipo = 'realizado';
+/*56*/select idgasto from Gasto where ano = '2019' and tipo = 'previsto';
+/*57*/select jan as 'Janeiro valor realizado' from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'realizado');
+/*58*/select jan as 'Janeiro valor previsto'  from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'previsto' );
+/*59*/select (
+               ( select jan as 'Janeiro valor previsto'  from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'previsto' ) ) - 
+               ( select jan as 'Janeiro valor realizado' from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'realizado') ) 
+			 ) as 'Diferença do previsto e do realizado para o mês de Janeiro';
+/*60*/select (
+               ( select jan from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'previsto' ) ) - 
+               ( select jan from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'realizado') ) 
+			 ) as 'Diferença do previsto e do realizado para o mês de janeiro',
+             (
+               ( select fev from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'previsto' ) ) - 
+               ( select fev from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'realizado') ) 
+			 ) as 'Diferença do previsto e do realizado para o mês de fevereiro',
+             (
+               ( select mar from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'previsto' ) ) - 
+               ( select mar from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'realizado') ) 
+			 ) as 'Diferença do previsto e do realizado para o mês de março',
+             (
+               ( select abr from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'previsto' ) ) - 
+               ( select abr from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'realizado') ) 
+			 ) as 'Diferença do previsto e do realizado para o mês de abril',
+             (
+               ( select mai from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'previsto' ) ) - 
+               ( select mai from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'realizado') ) 
+			 ) as 'Diferença do previsto e do realizado para o mês de maio',
+             (
+               ( select jun from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'previsto' ) ) - 
+               ( select jun from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'realizado') ) 
+			 ) as 'Diferença do previsto e do realizado para o mês de junho',
+             (
+               ( select jul from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'previsto' ) ) - 
+               ( select jul from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'realizado') ) 
+			 ) as 'Diferença do previsto e do realizado para o mês de julho',
+             (
+               ( select ago from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'previsto' ) ) - 
+               ( select ago from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'realizado') ) 
+			 ) as 'Diferença do previsto e do realizado para o mês de agosto',
+             (
+               ( select `set` from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'previsto' ) ) - 
+               ( select `set` from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'realizado') ) 
+			 ) as 'Diferença do previsto e do realizado para o mês de setembro',
+             (
+               ( select `out` from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'previsto' ) ) - 
+               ( select `out` from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'realizado') ) 
+			 ) as 'Diferença do previsto e do realizado para o mês de outubro',
+             (
+               ( select nov from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'previsto' ) ) - 
+               ( select nov from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'realizado') ) 
+			 ) as 'Diferença do previsto e do realizado para o mês de novembro',
+             (
+               ( select dez from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'previsto' ) ) - 
+               ( select dez from Gasto where idgasto = (select idgasto from Gasto where ano = '2019' and tipo = 'realizado') ) 
+			 ) as 'Diferença do previsto e do realizado para o mês de dezembro'
+
 
 /********************************************************************
  *                        Updates                                   *
