@@ -108,3 +108,8 @@ ALTER TABLE Aluno ADD CONSTRAINT uc_aluno_email unique(email);
 ALTER TABLE Endereco ADD CONSTRAINT uc_fk_idaluno UNIQUE(fk_idaluno);
 /* Garantindo que o campo tipo da tabela gasto tenha previsto no lugar de pervisto. */
 ALTER TABLE Gasto MODIFY COLUMN Tipo enum ('previsto','realizado');
+/* Criando o campo data de nascimento, como o banco está preenchido, não podemos usar o NOT NULL */
+ALTER TABLE Aluno ADD COLUMN Data_nascimento DATE;
+/* Antes atualizamos o campo Data_nascimento, depois executamos a query abaixo. */
+ALTER TABLE Aluno MODIFY COLUMN Data_nascimento DATE NOT NULL;
+

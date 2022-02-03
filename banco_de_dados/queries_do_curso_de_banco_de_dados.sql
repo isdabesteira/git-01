@@ -344,6 +344,12 @@ use banco_do_curso_de_banco_de_dados
 /*36*/update Gasto set `out` = 17667.91 where idgasto = 2;
 /*37*/update Gasto set nov = 17936.33 where idgasto = 2;
 /*38*/update Gasto set dez = 17125.88 where idgasto = 2;
+/*39*/update Aluno set Data_nascimento = '1960-05-01' where idaluno = 1;
+/*40*/update Aluno set Data_nascimento = '1980-06-12' where idaluno = 2;
+/*41*/update Aluno set Data_nascimento = '1982-01-07' where idaluno = 3;
+/*42*/update Aluno set Data_nascimento = '1970-03-04' where idaluno = 4;
+/*43*/update Aluno set Data_nascimento = '1985-12-05' where idaluno = 5;
+/*44*/update Aluno set Data_nascimento = '1988-01-20' where idaluno = 6;
 
 /********************************************************************
  *                        Deletes                                   *
